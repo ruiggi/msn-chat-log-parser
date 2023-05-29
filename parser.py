@@ -1,4 +1,4 @@
-#MODIFIED BY RUIGGI 2023-05-29
+#MODIFIED BY RUIGGI 2023-05-29   (changes marked with ###)
 
 """
 Formats MSN chat logs from XML to a more readable text file

@@ -1,3 +1,5 @@
+#MODIFIED BY RUIGGI 2023-05-29
+
 """
 Formats MSN chat logs from XML to a more readable text file
 """
@@ -6,6 +8,8 @@ import os
 from typing import IO
 from bs4 import BeautifulSoup
 import click
+#            with open(chat_log_file, "r") as chat_log:                                                 ### LINE REPLACED 2023-05-29
+import codecs                                                                                           ### LINE ADDED                               
 
 
 def format_message(message: BeautifulSoup) -> str:
@@ -46,8 +50,11 @@ def parse_chat_logs(input_folder: str, output_folder: str, print_output: bool) -
     """
     with os.scandir(input_folder) as chat_log_files:
         for chat_log_file in chat_log_files:
-            with open(chat_log_file, "r") as chat_log:
+#            with open(chat_log_file, "r") as chat_log:                                                 ### LINE REPLACED 2023-05-29
+            with open(chat_log_file, "r", encoding="utf8", errors='ignore') as chat_log:                ### LINE ADDED 2023-05-29
                 contents = chat_log.read()
+                contents = codecs.encode(contents,'iso-8859-1','ignore')                                #### LINE ADDED 2023-05-29
+            
                 soup = BeautifulSoup(contents, "html.parser")
 
                 if not os.path.exists(output_folder):

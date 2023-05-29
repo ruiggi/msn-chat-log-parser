@@ -1,3 +1,6 @@
+#### JUST SOME MODIFICATIONS TO KEEP IT WORKING IN 2023 AND SOLVE SOME PROBLEMS WITH ENCODE OF CHAT FILES
+
+
 # MSN Chat log parser
 
 This parser uses Beautiful Soup to convert MSN Messenger chat logs from XML to a more readable text file.

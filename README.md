@@ -1,9 +1,9 @@
-###2023-05-29
-### FORKED JUST TO ADD SOME MODIFICATIONS TO :
-### 1- KEEP IT WORKING IN 2023 AND,
-### 2- SOLVE SOME PROBLEMS WITH THE ENCOD OF CHAT FILES
-### Tested working with sample files from 2009
-
+### ### 2023-05-29
+### ### FORKED JUST TO ADD SOME MODIFICATIONS TO :
+### ### 1- KEEP IT WORKING IN 2023 AND,
+### ### 2- SOLVE SOME PROBLEMS WITH THE ENCOD OF CHAT FILES
+### ### Tested working with sample files from 2009
+### 
 
 # MSN Chat log parser
 
